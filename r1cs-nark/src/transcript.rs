@@ -1,8 +1,8 @@
 use core::panic;
 use std::collections::BTreeMap;
 
-use halo2curves::group::ff::PrimeField;
-use halo2curves::group::Curve;
+use crate::halo2curves::group::ff::PrimeField;
+use crate::halo2curves::group::Curve;
 use poseidon::sponge::{IOPattern, PoseidonSponge};
 
 use crate::traits::CurveLike;

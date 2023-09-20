@@ -1,4 +1,4 @@
-use halo2curves::FieldExt;
+use crate::halo2curves::FieldExt;
 
 #[derive(Clone, Debug)]
 pub struct SparseMatrixEntry<F: FieldExt> {

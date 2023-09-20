@@ -5,9 +5,12 @@ mod r1cs;
 pub mod traits;
 mod transcript;
 
+// Re-exports
+pub use poseidon::halo2curves;
+
+use crate::halo2curves::group::ff::Field;
 use crate::pedersen::Pedersen;
 use crate::traits::CurveLike;
-use halo2curves::group::ff::Field;
 use r1cs::R1CS;
 use rand;
 use std::marker::PhantomData;
@@ -224,7 +227,7 @@ impl<C: CurveLike> NARK<C> {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use halo2curves::secp256k1::{Fq, Secp256k1Affine};
+    use crate::halo2curves::secp256k1::{Fq, Secp256k1Affine};
     use poseidon::sponge::IOPattern;
 
     #[test]

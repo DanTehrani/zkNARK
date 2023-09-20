@@ -1,4 +1,4 @@
-use halo2curves::{group::prime::PrimeCurveAffine, CurveAffine, CurveExt, FieldExt};
+use crate::halo2curves::{group::prime::PrimeCurveAffine, CurveAffine, CurveExt, FieldExt};
 use poseidon::{halo2curves::secp256k1::Secp256k1Affine, traits::PoseidonField};
 use std::ops::{Add, Sub};
 

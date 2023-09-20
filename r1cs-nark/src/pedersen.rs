@@ -1,5 +1,5 @@
+use crate::halo2curves::group::Group;
 use crate::traits::CurveLike;
-use halo2curves::group::Group;
 
 pub struct Pedersen<C: CurveLike> {
     G: Vec<C::CurveExt>,
